@@ -1,5 +1,24 @@
 <html>
     <body>
-        <%= output %>
+            <table>
+                    <tr>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>gender</th>
+                        <th>age</th>
+                        <th>tel</th>
+                    </tr>
+                  <% for(var i=0; i < output.length; i++) { %>
+                    <tr>
+             
+                      <td><%= output[i].id %></td>
+                      <td><%= output[i].name %></td>
+                      <td><%= output[i].gender %></td>
+                      <td><%= output[i].age %></td>
+                      <td><%= output[i].tel %></td>
+             
+                    </tr>
+                 <% } %>
+                </table>
     </body>
 </html>

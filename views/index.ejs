@@ -6,6 +6,26 @@
         <input type="text" name="id">
         <button type="submit">Submit</button>
     </form>
-    <%= user %>
+
+    <table>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>gender</th>
+            <th>age</th>
+            <th>tel</th>
+        </tr>
+      <% for(var i=0; i < user.length; i++) { %>
+        <tr>
+ 
+          <td><%= user[i].id %></td>
+          <td><%= user[i].name %></td>
+          <td><%= user[i].gender %></td>
+          <td><%= user[i].age %></td>
+          <td><%= user[i].tel %></td>
+ 
+        </tr>
+     <% } %>
+    </table>
   </body>
 </html>
